@@ -1,18 +1,32 @@
-title: 'b2a3e8.github.io'
-description: "A jekyll theme inspired by linux consoles for hackers, developers and script kiddies."
-baseurl: "/jekyll-theme-console"
-url: "https://b2a3e8.github.io"
+title: Hacker-Blog
+description: "A Jekyll Blog Theme For Hackers"
+author:
+  name: "SomeHacker"
+  email: "someone@somewebsite.somedomain"
+  url: "https://ashishchaudhary.in/hacker-blog"
 
-header_pages:
-  - index.md
-  - peter.md
-  - about.md
-  - contact.md
+baseurl: /
 
-style: dark
+source: .
+destination: ./_site
+permalink: /:title
+paginate: 3
+paginate_path: /page/:num/
 
-footer: 'follow us on <a href="https://twitter.com/">twitter</a>'
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
 
-# Build settings
-markdown: kramdown
-remote_theme: b2a3e8/jekyll-theme-console
+future: true
+plugins:
+  - jekyll-seo-tag
+  - jekyll-paginate
+  - jekyll-sitemap
+
+# Custom variables
+owner : "SomeHacker"
+year : "2020"
