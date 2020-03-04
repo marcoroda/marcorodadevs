@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  LILY TTGO LoRa 32 node connected to TTN
-date:   2020-03-03 16:34:56 +0100
+title: TTGO LoRa node on TTN
+date: 2020-03-03
 categories: jekyll update
 published: true
 ---
