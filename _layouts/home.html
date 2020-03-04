@@ -6,7 +6,8 @@ layout: default
 {% assign contentwonl = content | strip_newlines %} {% unless contentwonl == ""  %} <br /> {% endunless %} <!-- add line break if there is any content -->
 
 {%- if site.posts.size > 0 -%}
-  <ul>
+<ul>
+  <h1>Projects</h3>
     {%- for post in site.posts -%}
     <li>
       {%- assign date_format = "%d-%m-%y" -%}
@@ -14,5 +15,4 @@ layout: default
     </li>
     {%- endfor -%}
 </ul>
-  
 {%- endif -%}

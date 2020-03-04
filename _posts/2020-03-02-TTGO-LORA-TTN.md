@@ -2,7 +2,7 @@
 layout: post
 title: TTGO LoRa node on TTN 
 date: 2020-03-03
-categories: jekyll update
+categories: [Projects]
 published: true
 ---
 
@@ -12,6 +12,7 @@ published: true
 
 # /brief
 On this project a TTGO LoRa32 module is used to log sensor data to TTN (The Things Network). 
+![My helpful screenshot](/assets/TTGO-LORA-TTN/ttgo.jpg)
 <img src="../../../../../assets/TTGO-LORA-TTN/ttgo.jpg" width="400">
 
 
