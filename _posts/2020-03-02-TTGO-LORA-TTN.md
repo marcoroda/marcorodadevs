@@ -12,12 +12,12 @@ published: true
 
 # /brief
 On this project a TTGO LoRa32 module is used to log sensor data to TTN (The Things Network). 
+<img src="../../../../../assets/TTGO-LORA-TTN/ttgo.jpg" width="400">
+
 
 # 0 - Status
 ## 0.1 - HW
-
-<img src="../../../../../assets/cat.jpg" width="400">
-
+No PCB
 ## 0.2 - SW
 
 
