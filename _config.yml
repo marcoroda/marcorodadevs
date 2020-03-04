@@ -16,7 +16,7 @@
 title: marcodevs
 email: marco.roda@protonmail.com
 description: This is my website where I will post the projects I am workin on.
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://marcoroda.github.io/marcorodadevs/" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  marcoroda
 
@@ -40,8 +40,8 @@ footer: '<a href="https://github.com/marcoroda" target="_blank">Github</a>'
 # Build settings
 # comment "remote_theme" and uncomment "theme" if build locally
 
-# theme: jekyll-theme-console
-remote_theme: b2a3e8/jekyll-theme-console
+theme: jekyll-theme-console
+# remote_theme: b2a3e8/jekyll-theme-console
 
 
 # Exclude from processing.
