@@ -16,8 +16,8 @@
 title: marcodevs
 email: marco.roda@protonmail.com
 description: This is my website where I will post the projects I am workin on.
-baseurl: "/" # the subpath of your site, e.g. /blog
-url: "https://marcoroda.github.io//marcorodadevs" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://marcoroda.github.io/marcorodadevs/" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  marcoroda
 
 plugins:
