@@ -1,32 +1,55 @@
-title: Hacker-Blog
-description: "A Jekyll Blog Theme For Hackers"
-author:
-  name: "SomeHacker"
-  email: "someone@somewebsite.somedomain"
-  url: "https://ashishchaudhary.in/hacker-blog"
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
-baseurl: /
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: marcodevs
+email: marco.roda@protonmail.com
+description: This is my website where I will post the projects I am workin on.
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "https://marcoroda.github.io//marcorodadevs" # the base hostname & protocol for your site, e.g. http://example.com
+github_username:  marcoroda
 
-source: .
-destination: ./_site
-permalink: /:title
-paginate: 3
-paginate_path: /page/:num/
-
-defaults:
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-
-future: true
 plugins:
-  - jekyll-seo-tag
-  - jekyll-paginate
-  - jekyll-sitemap
+  - jekyll-feed
+
+header_pages:
+  - index.md
+  - projects.md
+  - about.md
+  - contact.md
+
+markdown: kramdown
 
 # Custom variables
-owner : "SomeHacker"
-year : "2020"
+owner : "Marco Roda"
+year  : "2020"
+
+footer: '<a href="https://github.com/marcoroda" target="_blank">Github</a>'
+
+# Build settings
+# theme: jekyll-theme-console
+remote_theme: b2a3e8/jekyll-theme-console
+
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
