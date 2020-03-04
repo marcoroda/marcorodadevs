@@ -6,13 +6,14 @@ categories: jekyll update
 published: true
 ---
 
-On this project a TTGO LoRa32 module is used to log sensor data to TTN (The Things Network). 
-
 <small><i>Table of contents</i></small>
 * Table of contents
 {:toc}
 
-# 0 status
+# /brief
+On this project a TTGO LoRa32 module is used to log sensor data to TTN (The Things Network). 
+
+# 0 - Status
 ## 0.1 - HW
 
 ## 0.2 - SW
