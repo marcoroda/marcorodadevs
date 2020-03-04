@@ -8,13 +8,11 @@ layout: default
 
 {%- if site.posts.size > 0 -%}
 <ul>
-    <h1>Tutos</h3>
-        <!-- {%- for post in site.posts -%}
-        <li>
-            {%- assign date_format = "%d-%m-%y" -%}
-                [ {{ post.date | date: date_format }} ] <a
-                href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-        </li>
-        {%- endfor -%} -->
+    {%- for post in site.posts -%}
+    <li>
+        {%- assign date_format = "%d-%m-%y" -%}
+        [ {{ post.date | date: date_format }} ] <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+    </li>
+    {%- endfor -%}
 </ul>
 {%- endif -%}
