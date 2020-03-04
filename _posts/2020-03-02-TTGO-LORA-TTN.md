@@ -1,6 +1,6 @@
 ---
 layout: post
-title: TTGO LoRa node on TTN
+title: TTGO LoRa node on TTN 
 date: 2020-03-03
 categories: jekyll update
 published: true
@@ -15,6 +15,8 @@ On this project a TTGO LoRa32 module is used to log sensor data to TTN (The Thin
 
 # 0 - Status
 ## 0.1 - HW
+
+<img src="../../../../../assets/cat.jpg" width="400">
 
 ## 0.2 - SW
 
