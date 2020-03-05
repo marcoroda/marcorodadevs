@@ -1,9 +1,10 @@
 ---
 layout: post
-title: marcoroda.com Setup
+title: BeagleBone Linux Setup
 date: 2020-03-05
 published: true
 ---
+
 <!-- # Add an extra blanc line 
 <p>&nbsp;</p> -->
 
@@ -12,10 +13,9 @@ published: true
 {:toc}
 
 # /brief
-This page resumes the procedure I went through to set-up the website you are currently on.
-It includes the setting up of the jekyll static generator environment, jekyll template, host it on Github, get a domain and finally configure the DNS.
+This page resumes the procedure I went through to setup a Debian Linux distribution on my BeagleBone.
 
-# Motivation
+<!-- # Motivation
 * Have a static website to post whatever I am working or worked on;
 * To host documentation and to share with the hackers out there;
 
@@ -35,5 +35,5 @@ $ cd myWebsite
 ```
 <p>&nbsp;</p>
 
-(Not finished ... )
+(Not finished ... ) -->
 
