@@ -44,6 +44,10 @@ footer: '<a href="https://github.com/marcoroda" target="_blank">Github</a>'
 # theme: jekyll-theme-console
 remote_theme: b2a3e8/jekyll-theme-console
 
+collections:
+  tutos:
+    output: true
+
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
