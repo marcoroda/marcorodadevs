@@ -12,9 +12,11 @@ published: true
 
 # /brief
 On this project a TTGO LoRa32 module is used to log sensor data to TTN (The Things Network). 
-![My helpful screenshot](/assets/TTGO-LORA-TTN/ttgo.jpg)
-<img src="../../../../../assets/TTGO-LORA-TTN/ttgo.jpg" width="400">
+<!-- <img align = "center" src="../../../../../assets/TTGO-LORA-TTN/ttgo.jpg" width="400"> -->
 
+<p align="center">
+  <img width="500"  src="../../../../../assets/TTGO-LORA-TTN/ttgo.jpg">
+</p>
 
 # 0 - Status
 ## 0.1 - HW
