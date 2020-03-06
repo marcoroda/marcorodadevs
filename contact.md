@@ -7,17 +7,13 @@ permalink: /contact
 # Get in touch?
 Drop me an e-mail at <a href="mailto:mroda@marcoroda.com?Subject=Hi" target="_top">mroda@marcoroda.com</a>. 
 
-<p>&nbsp;</p>
-
-<p>Send E-mail</p>
-
+<!-- # Send email
 <form action="contactForm.php" method="post" method="post">
   <input type="text" id="name" name="name" placeholder="name:" autocomplete="off">
   <input type="text" id="email" name="email" placeholder="email:" autocomplete="off">
   <input type="text" id="subject" name="subject" placeholder="subject:" autocomplete="off">
   <textarea rows="4" id="message" name="message" placeholder="message:" autocomplete="off"></textarea>
-  <button type="submit" name="submit"> Send Mail</button>
-  <!-- <input type="submit" value="[ Submit ]"> -->
-</form>
+  <input type="submit" value="[ Submit ]">
+</form> -->
 
 
