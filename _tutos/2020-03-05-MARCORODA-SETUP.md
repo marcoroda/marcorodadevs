@@ -20,9 +20,13 @@ It includes the setting up of the jekyll static generator environment, jekyll te
 * To host documentation and to share with the hackers out there;
 
 # Jekyll
-The first step is to create a static website from scratch (not really from scratch). To do that we will use [Jekyll](https://jekyllrb.com/). Jekyll is a static site generator, much like [Hugo](https://gohugo.io/). You give it text written in your favorite markup language and it uses layouts (default or custom) to create a static website. It is Github pages compatible, making it a perfect candidate to start with.
+The first step is to create a static website from scratch (sort of). To do that we will use [Jekyll](https://jekyllrb.com/). Jekyll is a static site generator, much like [Hugo](https://gohugo.io/). You give it text written in your favorite markup language and it uses layouts (default or custom) to create a static website. It is Github pages compatible, making it a perfect candidate to start with.
+
 <p>&nbsp;</p>
+
 To start, you will have to install on your machine the full [Ruby](https://jekyllrb.com/docs/installation/) development environment (Jekyll is written in Rub -> Ruby Gem). Having done that, create a template jekyll site with the following instructions.
+
+
 <p>&nbsp;</p>
 
 ```shell
@@ -35,5 +39,5 @@ $ cd myWebsite
 ```
 <p>&nbsp;</p>
 
-(Not finished ... )
+
 

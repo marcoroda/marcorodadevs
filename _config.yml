@@ -14,14 +14,17 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: marcodevs
-email: marco.roda@protonmail.com
-description: This is my website where I will post the projects I am workin on.
+email: mroda@marcoroda.com
+description: Hi hackers, this is my website.
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://marcoroda.github.io/marcorodadevs" # the base hostname & protocol for your site, e.g. http://example.com
-github_username:  marcoroda
+github_username: marcoroda
+style: dark
+
 
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
 
 header_pages:
   - index.md

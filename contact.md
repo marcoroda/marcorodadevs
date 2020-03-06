@@ -5,8 +5,7 @@ permalink: /contact
 ---
 
 # Get in touch?
-Want to discuss or ask anything? Drop me an e-mail at marco.roda@protonmail.com
-
+Drop me an e-mail at <a href="mailto:mroda@marcoroda.com?Subject=Hi" target="_top">mroda@marcoroda.com</a>.
 
 <!-- <form>
   <input type="text" id="name" name="name" placeholder="name:" autocomplete="off">

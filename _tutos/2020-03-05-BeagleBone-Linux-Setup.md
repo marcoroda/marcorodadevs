@@ -2,7 +2,7 @@
 layout: post
 title: BeagleBone Linux Setup
 date: 2020-03-05
-published: true
+published: false
 ---
 
 <!-- # Add an extra blanc line 
