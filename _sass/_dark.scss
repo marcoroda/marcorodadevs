@@ -4,12 +4,15 @@
 
 :root {
   --base-color: #DBDBDB;
+  --h1-color: rgb(16, 172, 10);
+  --h2-color: rgb(96, 202, 93);
   --primary-color: #A2FC8F;
   --border: dashed 1px rgba(219, 219, 219, 0.9);
   --selection-background: rgba(219, 219, 219, 0.99);
   --selection-text: #000;
   --background-color: rgb(49, 46, 46);
-  --text-color: var(--base-color);
+  --text-color    : var(--base-color);
+  --text-color_h1 : var(--h1-color);
   --placeholder-color: var(--base-color);
   --link-color: var(--base-color);
   --code-color-1: #aaaaaa;
