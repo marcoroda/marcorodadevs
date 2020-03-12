@@ -46,7 +46,7 @@ footer: '(This website is under construction) <a href="/CV">CV</a> <a href="http
 
 # theme: jekyll-theme-console
 # remote_theme: b2a3e8/jekyll-theme-console
-remote_theme: marcoroda/marcorodadevs
+# remote_theme: marcoroda/marcorodadevs
 
 collections:
   tutos:
