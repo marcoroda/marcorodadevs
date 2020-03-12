@@ -66,10 +66,10 @@ Open your [WebBrowser](http://127.0.0.1:8000//) and you should see this:
 <p>&nbsp;</p>
 Great, we have created a static website using Jekyll.
 
-## Theme-Console
+## >> Theme-Console
 When a new Jekyll template site is created, by default it comes with the minima theme installed. The user might freely decide to pick some other theme (and there are a lot, really). [Here](http://jekyllthemes.org/) you can check out some of them.
 
-I have decided to use a Jekyll template available on [Github](https://github.com/b2a3e8/jekyll-theme-console).
+I picked a Jekyll template available on [Github](https://github.com/b2a3e8/jekyll-theme-console).
 To install it and be able to build and serve it locally, I went through the README.me file as such:
 <p>&nbsp;</p>
   1. Add the following line to your Gemfile:
@@ -95,6 +95,89 @@ Open the [browser](http://127.0.0.1:8000//) and verify you have the following wi
   <img width="500"  src="../../../../../assets/tuto_MarcoRoda/jekyll_2.png">
 </p>
 
+<p>&nbsp;</p>
+
+Having the theme-console template up and running I started to customize it. For adding header content, I added the following to *_config.yml*:
+
+<p>&nbsp;</p>
+```shell
+header_pages:
+  - index.md
+  - projects.md
+  - tutos.md
+  - about.md
+  - contact.md
+```
+Note that the *index.md*, *projects.md*, etc. are markdown files on the /root directory. 
+<p>&nbsp;</p>
+
+For the footer I added the following line on *_config.yml*:
+
+<p>&nbsp;</p>
+```shell
+footer: '<a href="/CV">CV</a> <a href="https://github.com/marcoroda" target="_blank">Github</a>'
+```
+
+## >> Collections
+By default, when the jekyll template website is created, there is only one type of collection (_posts). Collections are a great way to group related content like projects, tutos or talks at a conference. 
+
+### >> _posts Collection
+If you inspect the markdown file under _posts/, you will see that at the top of the file there is the following:
+
+<p>&nbsp;</p>
+```shell
+---
+layout: post
+title:  "Welcome to Jekyll!"
+date:   2020-03-06 16:23:13 +0100
+---
+```
+<p>&nbsp;</p>
+
+This tells the jekyll Ruby engine the layout ('post' which is the default one), title and date. If we want the markdown files under the _post dir/ to be rendered automatically by [Liquid](https://shopify.github.io/liquid/) under a specific static page (or markdown file) we create a *projects.md* file with the following content:
+
+<p>&nbsp;</p>
+```shell
+---
+title: /projects        # the title of the static page
+layout: home            # layout to be used
+permalink: /projects    # link to the *project.md* file 
+---
+```
+<p>&nbsp;</p>
+Here we tell jekyll that for this page, go to the _layouts dir and render the code on it.
+
+### >> _tutos Collection
+I wanted to create another type of collection to display different content. I started byt creating a *_tutos* collection. 
+To do that I added the following lines to my *_config.yml*:
+<p>&nbsp;</p>
+```shell
+collections:
+  tutos:
+    output: true
+```
+<p>&nbsp;</p>
+Then create a dir/ non the root of the website "_tutos". Add a markdown file very much like the one we have already under the _posts dir/. The following lines need to be placed on the beginning of the .md file.
+<p>&nbsp;</p>
+```shell
+---
+layout: post
+title: marcoroda.com Setup
+date: 2020-03-05
+published: true
+---
+```
+<p>&nbsp;</p>
+Now we create a *tutos.md* under the the root dir/ and tell jekyll lto render whatever is on under * _layouts/tuto.html*. On that html file we have a liquid template fetching and displaying all the tutos posts available.
+
+
+# >> Host on github
+
+
+
+
+
+That's it, this is my Jekyll static website setup.
 
 
 

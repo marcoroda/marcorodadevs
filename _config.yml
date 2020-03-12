@@ -39,7 +39,7 @@ markdown: kramdown
 owner : "Marco Roda"
 year  : "2020"
 
-footer: '(This website is under construction) <a href="https://github.com/marcoroda" target="_blank">Github</a>'
+footer: '(This website is under construction) <a href="/CV">CV</a> <a href="https://github.com/marcoroda" target="_blank">Github</a>'
 
 # Build settings
 # comment "remote_theme" and uncomment "theme" if build locally
@@ -50,6 +50,7 @@ remote_theme: b2a3e8/jekyll-theme-console
 collections:
   tutos:
     output: true
+  
 
 
 # Exclude from processing.
