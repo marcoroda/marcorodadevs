@@ -44,8 +44,8 @@ footer: '(This website is under construction) <a href="/CV">CV</a> <a href="http
 # Build settings
 # comment "remote_theme" and uncomment "theme" if build locally
 
-# theme: jekyll-theme-console
-remote_theme: b2a3e8/jekyll-theme-console
+theme: jekyll-theme-console
+# remote_theme: b2a3e8/jekyll-theme-console
 
 collections:
   tutos:
