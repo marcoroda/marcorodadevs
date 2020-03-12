@@ -1,11 +1,15 @@
 @charset "utf-8";
+// Google Fonts
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab|Open+Sans:400italic,700italic,400,700);
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700');
-
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
 /**
  * Style variables
  */
 // $base-font-family:     'Source Code Pro', monospace !default;
-$base-font-family:     'Oxanium', monospace !default;
+// $base-font-family:     'Roboto Slab', serif !default; 
+// $base-font-family: Helvetica, sans-serif;
+$base-font-family:     'Roboto Mono', monospace; 
 $base-font-size:       15px !default;
 $h1-font-size:         20px !default;
 $h2-font-size:         18px !default;
