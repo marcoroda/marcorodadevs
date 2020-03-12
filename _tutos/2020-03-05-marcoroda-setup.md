@@ -168,17 +168,13 @@ published: true
 ---
 ```
 <p>&nbsp;</p>
-Now we create a *tutos.md* under the the root dir/ and tell jekyll lto render whatever is on under * _layouts/tuto.html*. On that html file we have a liquid template fetching and displaying all the tutos posts available.
-
+Now we create a *tutos.md* under the the root dir/ and tell jekyll lto render whatever is on under * _layouts/tuto.html*. On that html file we have a liquid template fetching and displaying all the tutos available.
 
 # >> Host on github
-
-
-
-
-
-That's it, this is my Jekyll static website setup.
-
+## >> Create a Git Repo on Github
+Github makes it very easy to host our Static website. Create a github repository and under settings enable Github pages. Choose the branch from where the website is going to be built.
+## Set-up the local repo
+Set-up the git repo locally and set the remote. Git push the local repo and 
 
 
 
