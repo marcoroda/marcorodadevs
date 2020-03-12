@@ -1,5 +1,5 @@
 ---
 ---
 
-/* @import "{{ site.theme }}"; */
-@import "theme-console/initialize";
+@import "{{ site.theme }}";
+/* @import "jekyll-theme-console"; */
