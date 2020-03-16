@@ -23,7 +23,7 @@ It includes the setting up of the jekyll static generator environment, jekyll te
 The first step is to create a static website from scratch (sort of). To do that I used [Jekyll](https://jekyllrb.com/). Jekyll is a static site generator, much like [Hugo](https://gohugo.io/) or any other available out there. You give it text written in your favorite markup language and it uses layouts (default or custom) to create a static website. It is Github pages compatible, making it a perfect candidate to start with.
 
 ## >> Environment Set-up
-To start, I installed on my machine the full [Ruby](https://jekyllrb.com/docs/installation/) development environment (Jekyll is written in Rub -> Ruby Gem). I set it all up on my Ubuntu 16.04 machine, W10 worked as fine using [WSL](https://docs.microsoft.com/en-us/windows/wsl/install-win10).
+To start, I installed on my machine the full [Ruby](https://jekyllrb.com/docs/installation/) development environment (Jekyll is written in Rub -> Ruby Gem). I set it all up on my Ubuntu 16.04 machine, W10 worked as fine using [WSL](https://docs.microsoft.com/en-us/windows/wsl/install-win10) and this [link](https://gorails.com/setup/windows/10#subsystem) to install ruby version > 2.4 (required).
 Having done that, create a template jekyll site with the following instructions.
 <p>&nbsp;</p>
 
