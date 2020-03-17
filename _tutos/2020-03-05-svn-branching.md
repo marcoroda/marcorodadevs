@@ -13,7 +13,7 @@ published: true
 
 # /brief
 Sometimes you are forced to use Subversion... It happens specially when some repos on your company are tied to this old technology! 
-After many attemps on trying to do branching in SVN, I finally came up with a workflow that seems to work. Here on this page I describe the branching workflow that works for me.
+After many attempts on trying to do branching in SVN, I finally came up with a workflow that seems to work. Here on this page I describe the branching workflow that works for me.
 
 # Create a branch
 I will be using Tortoise SVN.
@@ -35,7 +35,7 @@ With the src/ folder selected, right click > tortoiseSVN > Branch/Tag, as follow
 </p>
 <p>&nbsp;</p>
 
-Now, we select to wich branch folder we want the src/ folder to be "copied". I like to create a folder under /branch with a description of te feature to be developed:
+Now, we select to which branch folder we want the src/ folder to be "copied". I like to create a folder under /branch with a description of te feature to be developed:
 <p align="left">
   <img width="500"  src="../../../../../assets/tuto_svn_branching/file_exp_svn_branch2.png">
 </p>
@@ -47,7 +47,7 @@ Add a commit message and press "Ok":
 <p>&nbsp;</p>
 
 Now, we have a copy of the "HEAD revision" of the trunk/src folder under the branches/feature-xpto.
-One could go to the branches/ folder and start working in the feature branch, however we would have to TortoiseSVN > Switch... (to swicth the working directory). I prefer not to, and believe I tried. 
+One could go to the branches/ folder and start working in the feature branch, however we would have to TortoiseSVN > Switch... (to switch the working directory). I prefer not to, and believe I tried. 
 The way I prefer to do it would be to create another folder */_branching* on the root of the SVN repo, and create a folder with the name of the feature branch we just created "feature-xpto".
 <p align="left">
   <img width="350"  src="../../../../../assets/tuto_svn_branching/file_exp_svn_branch4.png">
@@ -83,12 +83,14 @@ Here we select the branch to merge from and the specific revision to be merged:
   <img width="500"  src="../../../../../assets/tuto_svn_branching/file_exp_svn_branch9.png">
 </p>
 <p>&nbsp;</p>
-Press "Next" and press "Merge". Conflits might appear if someone commited to the trunk while you were working on the feature branch. If all goes ok, you should see the following window:
+Press "Next" and press "Merge". Conflicts might appear if someone committed to the trunk while you were working on the feature branch. If all goes ok, you should see the following window:
 <p align="left">
   <img width="500"  src="../../../../../assets/tuto_svn_branching/file_exp_svn_branch10.png">
 </p>
 <p>&nbsp;</p>
 
+Finally, commit the trunk by right clinking > TortoiseSVN > Commit and write your merge commit message.
+
 # Wrapping up
-Branching on SVN can be a pain. This setup is not ideal but it works for me. Hope it's usefull to someone out there.
+Branching on SVN can be a pain. This setup is not ideal but it works for me. Hope it's useful to someone out there.
 Happy coding! *ah, use Git, Git is awesome!!!* 
