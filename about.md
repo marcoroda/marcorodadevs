@@ -8,15 +8,20 @@ permalink: /about/
 Marco Roda, 29 YO from Portugal.
 
 # $ uname -a
-Embedded Systems and Electronics in general passionate. Always looking for the next project.
-## Fields of interest: 
-* Embedded Linux development
-* GNSS, GPS and Galileo Acquisition, Traking and Navigation message decoding
+Embedded Systems and Electronics in general passionate. Love to dig into embedded Linux development on general purpose single board computers; Connect devices to the internet: ESP8266/ESP32, LoRa or SigFox; SDR prototyping with open HW and SW HackRF One board from Great Scott Gadgets, and more.   
+
+# Fields of interest: 
+* Embedded Linux development (Buildroot, Yocto and Petalinux)
+* GNSS digital signal processing and navigation message decoding techniques.
 * LoRA, Sigfox
-* SoC Xilinx FPGAs, Petalinux, Buildroot
+* SoC Xilinx FPGAs Zynq-7000
 * ARM Cortex-M0/M4/M7
 
-<!-- # $ uname -r 
-4.15.0-76-generic, Ubuntu 16.04 with KDE -->
-
-
+# Dev Boards and platforms experience:
+* SAMV71 Xplaine dUltra
+* STM32F7 Discovery
+* BeagleBone Black
+* RaspberyPi 3
+* Xilinx Zynq ZC706
+* Zedboard, Zybo
+* Arduino

@@ -2,7 +2,7 @@
 layout: post
 title: TTGO LoRa node on TTN 
 date: 2020-03-03
-published: true
+published: false
 ---
 
 <small><i>Table of contents</i></small>

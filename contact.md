@@ -13,7 +13,7 @@ permalink: /contact
   <input type="text" id="email" name="email" placeholder="email:" autocomplete="off">
   <input type="text" id="subject" name="subject" placeholder="subject:" autocomplete="off">
   <textarea rows="4" id="message" name="message" placeholder="message:" autocomplete="off"></textarea>
-  <input type="submit" value="[ Send]">
+  <input type="submit" value="[ Send ]">
 </form>
 
 
