@@ -2,7 +2,7 @@
 layout: post
 title: marcoroda.com Setup
 date: 2020-03-05
-published: false
+published: true
 ---
 <!-- # Add an extra blanc line 
 <p>&nbsp;</p> -->
@@ -78,7 +78,7 @@ To install it and be able to build and serve it locally, I went through the READ
   ```
   2. Fetch and update bundled gems by running the following Bundler command:
   ```shell
-  $ bundle
+  $ bundle  
   ```
   3. Set theme in your project's Jekyll _config.yml file:
   ```shell
@@ -121,7 +121,7 @@ footer: '<a href="/CV">CV</a> <a href="https://github.com/marcoroda" target="_bl
 ## >> Collections
 By default, when the jekyll template website is created, there is only one type of collection (_posts). Collections are a great way to group related content like projects, tutos or talks at a conference. 
 
-### >> _posts Collection
+### >> >> _posts Collection
 If you inspect the markdown file under _posts/, you will see that at the top of the file there is the following:
 
 <p>&nbsp;</p>
@@ -147,7 +147,7 @@ permalink: /projects    # link to the *project.md* file
 <p>&nbsp;</p>
 Here we tell jekyll that for this page, go to the _layouts dir and render the code on it.
 
-### >> _tutos Collection
+### >> >> _tutos Collection
 I wanted to create another type of collection to display different content. I started byt creating a *_tutos* collection. 
 To do that I added the following lines to my *_config.yml*:
 <p>&nbsp;</p>
@@ -168,16 +168,40 @@ published: true
 ---
 ```
 <p>&nbsp;</p>
-Now we create a *tutos.md* under the the root dir/ and tell jekyll lto render whatever is on under * _layouts/tuto.html*. On that html file we have a liquid template fetching and displaying all the tutos available.
+Now we create a *tutos.md* under the the root dir/ and tell jekyll to render whatever is on * _layouts/tuto.html*. On that html file we have a liquid template fetching and displaying all the tutos available.
 
-# >> Host on github
-Github makes it very easy to host our Static website through [Github pages](https://pages.github.com/). Create a github repository and under settings enable Github pages and choose the branch from where the website is going to be built. Set-up the git repo locally and set the remote. Finally push it to github and you are done.
+# Host on github
+Github makes it very easy to host static website through [Github pages](https://pages.github.com/). Create a github repository and under settings enable Github pages, choose the branch from where the website is going to be built and press save. Set-up the git repo locally and set the remote. Finally push it to github and you are done.
 <p>&nbsp;</p>
 *In order to be able to run the website locally, the following line needs to be added to the Gemfile*. Comment it out when pushing to github.
-
+<p>&nbsp;</p>
 ```shell
 gem "jekyll-theme-console"
 ```
+<p>&nbsp;</p>
+If all goes as expecte you should have your website deployed under *https://<<your-github-username>>.github.io/<<your-website-repo-name>>/*
 
+# Get a domain
+One can buy a domain and have the website still hosted on github. I bought my domain (marcoroda.com) at [godaddy](https://uk.godaddy.com/). To let github know about my domain I have created under my website repo's root a CNAME file with the URL domain in it. Also, under the website github repo settings, you have a field where you enter the domain name.
 
+<p align="left">
+  <img width="500"  src="../../../../../assets/tuto_MarcoRoda/github_pages.png">
+</p>
 
+# Configure the DNS
+To configure the DNS I used [CloudFlare](https://www.cloudflare.com/). Why do we need a DNS in the first place?
+
+Domain Name Servers (DNS) are the Internet's equivalent of a phone book. They maintain a directory of domain names and translate them to Internet Protocol (IP) addresses. This is necessary because, although domain names are easy for people to remember, computers or machines, access websites based on IP addresses. 
+
+## >> Account on CloudFlare
+My set-up uses CloudFlare to manage the DNS. There are plenty of DNS services out there. No need to stick to this one, you can pick the one you want. CloudFlare is completely free and thhey claim to be one of the fastest to resolve the DNS name in the market. Also you can configure and buy addictional DNS servers so that if your website traffic has a peak it can handle it easily. 
+
+## >> CloudFlare DNS managment
+Being a proud owner of a domain, you can head to cloudflare and first add a website and second configure the DNS. To do so you will have to add the CNAME type. Follow this [github help](https://help.github.com/en/github/working-with-github-pages/managing-a-custom-domain-for-your-github-pages-site) article on how to do it. This usually takes some time to be effective. Be patient. 
+
+<p align="left">
+  <img width="600"  src="../../../../../assets/tuto_MarcoRoda/cloudflare.png">
+</p>
+
+# Wrapping up
+With all the above steps done, hopefully you managed to set up your own website with your own domain. Static websites are again gaining a lot of popularity. No need for server side applications, such as backend and databases. You have totally control over with no cost whatsoever, almost, you still have to pay for the domain (if you like).  
