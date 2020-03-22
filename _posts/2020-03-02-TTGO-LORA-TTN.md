@@ -1,6 +1,6 @@
 ---
 layout: post
-title: TTGO LoRa node on TTN 
+title: TTGO LoRa node connected to TTN 
 date: 2020-03-03
 published: false
 ---
@@ -10,56 +10,34 @@ published: false
 {:toc}
 
 # /brief
-On this project a TTGO LoRa32 module is used to log sensor data to TTN (The Things Network). 
-<!-- <img align = "center" src="../../../../../assets/TTGO-LORA-TTN/ttgo.jpg" width="400"> -->
+On this project a TTGO LoRa32 module is used to log BME280 sensor data to TTN (The Things Network). 
 
-<p align="center">
-  <img width="500"  src="../../../../../assets/TTGO-LORA-TTN/ttgo.jpg">
-</p>
+# Motivation
+* Monitor temperature, pressure and humidity data;
+* Make the sensor payload available to TN using LoRa
+* Server side application using NodeRED
 
-# 0 - Status
-## 0.1 - HW
-No PCB
-## 0.2 - SW
+# Hardware
+* [LILY TTGO LoRa32 module](https://www.banggood.com/2Pcs-LILYGO-TTGO-LORA32-868Mhz-ESP32-LoRa-OLED-0_96-Inch-Blue-Display-bluetooth-WIFI-ESP-32-Development-Board-Module-With-Antenna-p-1507044.html?gmcCountry=CH&currency=CHF&cur_warehouse=CN&createTmp=1&utm_source=googleshopping&utm_medium=cpc_bgs&utm_content=xibei&utm_campaign=xibei-ssc-ch-en-all-1221&gclid=Cj0KCQjwmdzzBRC7ARIsANdqRRloX4zMT19MDiMRmwDUTs464G_B-Qzm2nYS19v-sgOSTIjvI-gJ47IaArarEALw_wcB);
+* [BME280 sensor](https://www.banggood.com/CJMCU-280E-BME280-High-Precision-Atmospheric-Pressure-Sensor-p-1103115.html?rmmds=search&cur_warehouse=CN)
 
+# Arduino IDE set-up
+The HW module used on this project contains the ESP32 chip from espressif. One can flash this board using the Arduino IDE. The following libraries and boards need to be installed:
+## >> Board
+Install the **esp32** board under Arduino: With the Arduino IDE opened, go to File > Preferences. Under "Additional Boards Manager URLs" add the following line:
+<p>&nbsp;</p>
+```
+https://dl.espressif.com/dl/package_esp32_index.json, http://arduino.esp8266.com/stable/package_esp8266com_index.json 
+```
+<p>&nbsp;</p>
+Next go to Tools > Board > Boards Manager. Search for esp32 and install the one from espressif. Restart the Arduino IDE. 
 
-# 1 - Motivation
-Monitor the temperature, pressure and humidity and log it on TTN platform.
+## >> Libraries
+* [OLED SSD1306 Library](https://github.com/adafruit/Adafruit_SSD1306) : drivers for the OLED display based on SSD1306 chip. 
+To install it download as a .ZIP file from Github and go to Sketch > Include Library > Add .ZIP library. Install also the [GFX](https://github.com/adafruit/Adafruit-GFX-Library) drivers. 
+* [LoRa SX1276 Library by sandeep](https://github.com/sandeepmistry/arduino-LoRa) : LoRa transceiver drivers.
+* [Arduino-LMIC Library](https://github.com/matthijskooijman/arduino-lmic) :  IBM LMIC (LoraMAC-in-C) library, slightly modified to run in the Arduino environment, allowing using the SX1272, SX1276 transceivers and compatible modules (such as some HopeRF RFM9x modules).
 
-# 2 - Hardware
-* LILY TTGO LoRa32 module;
-* BME280
-* LIPO battery 500 mAh
-* 3D printed plastic case
+<p>&nbsp;</p>
+After installing the libraries restart the Arduino IDE.
 
-
-
-
-# 3 - TODO
-* Add server side app to display data
-* 
-
-<!-- You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
-
-test
-<img src="https://upload.wikimedia.org/wikipedia/commons/6/66/An_up-close_picture_of_a_curious_male_domestic_shorthair_tabby_cat.jpg" width="300">
-
-
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
-
-Jekyll also offers powerful support for code snippets:
-
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
-
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
-
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
- -->
