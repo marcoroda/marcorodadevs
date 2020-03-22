@@ -200,7 +200,7 @@ My set-up uses CloudFlare to manage the DNS. There are plenty of DNS services ou
 Being a proud owner of a domain, you can head to cloudflare and first add a website and second configure the DNS. To do so you will have to add the CNAME type. Follow this [github help](https://help.github.com/en/github/working-with-github-pages/managing-a-custom-domain-for-your-github-pages-site) article on how to do it. This usually takes some time to be effective. Be patient. 
 
 <p align="left">
-  <img width="600"  src="../../../../../assets/tuto_MarcoRoda/cloudflare.png">
+  <img width="600"  src="../../../../../assets/tuto_MarcoRoda/cloud_flare.png">
 </p>
 
 # Wrapping up
