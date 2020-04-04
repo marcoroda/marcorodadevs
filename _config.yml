@@ -39,7 +39,7 @@ markdown: kramdown
 owner : "Marco Roda"
 year  : "2020"
 
-footer: '(This website is under construction) <a href="/CV">CV</a> <a href="https://github.com/marcoroda" target="_blank">Github</a>'
+footer: '(This website is under construction) <a href="../../../../../assets/CV_MarcoRoda.pdf">CV</a> <a href="https://github.com/marcoroda" target="_blank">GitHub</a>'
 
 # Build settings
 # comment "remote_theme" and uncomment "theme" if build locally
