@@ -24,12 +24,6 @@ On this project a TTGO LILYGO LoRa32 module is used to interface a BME280 sensor
 * Make the sensor payload available to TTN using LoRa;
 * Show sensor data using Node-RED dashboard.
 
-# TODO & Future Devs
-- custom PCB with ATSAMD21G18;
-- Arduino compatible;
-- RFM95 lora module;
-- Solar panel.
-
 # Prototype
 To prototype the main idea I will be using hardware that I already own, and later on produce a custom PCB with a M0 ARM uController, LoRa transceiver, add a solar panel and enclosure it on a nice case. 
 
@@ -288,9 +282,21 @@ You will have to copy the "default key" on the bottom of your TTN application pa
   <img width="800" src="../../../../../assets/proj_LoRa_TTN_nodeRed/node-red.png">
 </p>
 
-Click Deploy and head to BBB-ip:1880/ui/.
+Click Deploy and head to BBB-ip:1880/ui/. If the LoRA node managed to connect to TTN, you should be seeing some values under the node-RED UI.
 
 <p align="center">
-  <img width="800" src="../../../../../assets/proj_LoRa_TTN_nodeRed/node-red.png">
+  <img width="800" src="../../../../../assets/proj_LoRa_TTN_nodeRed/node-red-ui.png">
 </p>
+
+## >> Wrapping Up
+With this prototype, we have set-up an end-to-end IoT Lora node with The Things Network platform. We have also set up a server side node-RED application that is able to connect to TTN and show the sensor data on a fancy dashboard. 
+
+## >> TODO & Future Devs
+As a future work, I plan to:
+* custom PCB replacing the TTGO LILY board, probably based on the SAMD21 uController and LoRa transceiver RFM95;
+* custom 3D case;
+* battery consumption optimization using sleep func();
+* Add Solar panel to automatically charge the battery;
+* ...
+
 
