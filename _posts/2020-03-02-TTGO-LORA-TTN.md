@@ -282,7 +282,7 @@ You will have to copy the "default key" on the bottom of your TTN application pa
   <img width="800" src="../../../../../assets/proj_LoRa_TTN_nodeRed/node-red.png">
 </p>
 
-Click Deploy and head to BBB-ip:1880/ui/. If the LoRA node managed to connect to TTN, you should be seeing some values under the node-RED UI.
+Click Deploy and head to BBB-ip:1880/ui/. If the LoRA node managed to connect to TTN, you should be seeing some values under the node-RED UI. The graph values are dummy for the moment. I have a sawtooth wave being sent over LoRa to simulate the BME280 sensor values.
 
 <p align="center">
   <img width="800" src="../../../../../assets/proj_LoRa_TTN_nodeRed/node-red-ui.png">
