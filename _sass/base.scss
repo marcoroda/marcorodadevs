@@ -11,12 +11,13 @@
 // $base-font-family: Helvetica, sans-serif;
 $base-font-family:     'Roboto Mono', monospace; 
 $base-font-size:       14px !default;
-$h1-font-size:         18px !default;
+$toc-font-size:        15px !default;
+$h1-font-size:         20px !default;
 $h2-font-size:         16px !default;
 $mobile-font-size:     12px !default;
 $base-line-height:     1.5 !default;
 $container-width:      90% !default;
-$container-max-width:  700px !default;
+$container-max-width:  1000px !default;
 
 /**
  * Global
@@ -25,7 +26,7 @@ body { background-color: var(--background-color);  margin: 0 auto;  padding: 0; 
 h1 { font-size: $h1-font-size;  margin: 0px;  margin-top: 22px;  font-weight: bold;  color: var(--text-color_h1); }
 h2, h3, h4, h5, h6 { font-size: $h2-font-size;  margin: 0px;  margin-top: 22px;  font-weight: bold;  color: var(--h2-color); }
 p, ul, ol { margin: 0px;  color: var(--text-color); }
-a { text-decoration: underline;  color: var(--link-color); }
+a { text-decoration: underline dotted green; color: var(--text-color); font-size: $toc-font-size;}
 a:hover { color: var(--background-color); background-color: var(--base-color); }
 .primary-text { color: var(--primary-color); }
 @media only screen and (max-device-width: 500px) { * { font-size: $mobile-font-size !important; } }
@@ -146,3 +147,14 @@ pre { background-color: var(--background-color);  border: none;  padding: 0;  ma
 .highlight .vg { color: var(--code-color-7); } /* Name.Variable.Global */
 .highlight .vi { color: var(--code-color-7); } /* Name.Variable.Instance */
 .highlight .il { color: var(--code-color-14); } /* Literal.Number.Integer.Long */
+
+/*
+ * Tables
+ */
+.mbtablestyle {
+    border-collapse: collapse;
+
+> table, td, th {
+    border: 2px solid grey;
+    }
+}
