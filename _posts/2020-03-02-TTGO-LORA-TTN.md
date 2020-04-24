@@ -3,6 +3,7 @@ layout: post
 title: LoRa node talking to TTN and Node-Red Dashboard 
 date: 2020-04-12
 published: True
+github_comments_issueid: "3"
 ---
 
 <small><i>Table of contents</i></small>

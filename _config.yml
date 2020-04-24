@@ -21,7 +21,6 @@ url: "https://marcoroda.github.io/marcorodadevs" # the base hostname & protocol 
 github_username: marcoroda
 style: dark
 
-
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
@@ -52,6 +51,9 @@ collections:
   tutos:
     output: true
   
+
+# Set this to a github repository to be used to host comments.
+github_comments_repository : marcoroda/marcorodadevs-comments
 
 
 # Exclude from processing.
