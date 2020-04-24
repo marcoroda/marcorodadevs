@@ -208,3 +208,4 @@ Being a proud owner of a domain, you can head to cloudflare and first add a webs
 With all the above steps done, hopefully you managed to set up your own website with your own domain. Static websites are again gaining a lot of popularity. No need for server side applications, such as backend and databases. You have totally control over with no cost whatsoever, almost, you still have to pay for the domain (if you like).
 
 # Comments
+Leave a comment and/or suggestion on this post.
