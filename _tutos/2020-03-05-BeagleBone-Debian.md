@@ -3,6 +3,7 @@ layout: post
 title: BeagleBone eMMC Flashing
 date: 2020-04-10
 published: True
+github_comments_issueid: "6"
 ---
 
 <!-- # Add an extra blanc line 

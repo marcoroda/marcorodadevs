@@ -6,6 +6,10 @@ published: True
 github_comments_issueid: "3"
 ---
 
+
+<h1 style="text-align:center">LoRa node talking to TTN and Node-Red Dashboard</h1>
+
+
 <small><i>Table of contents</i></small>
 * Table of contents
 {:toc}
