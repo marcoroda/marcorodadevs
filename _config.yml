@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: marcodevs
 email: mroda@marcoroda.com
-description: Hi hackers, this is my website.
+description: Hi Makers, this is my website.
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://marcoroda.github.io/marcorodadevs" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: marcoroda
