@@ -5,7 +5,10 @@ permalink: /about/
 ---
 
 # $ whoami
-Marco Roda, 29 YO from Portugal.
+
+| -- | --|
+| Marco Roda, maker and DYI electronics enthusiast from Portugal. All sports lover, father of a little girl and currently working as a GNSS engineer. Love space and all about rocket science. | <img src="../assets/avatar.png" alt="Avatar" style="width:150px">|
+
 
 # $ uname -a
 Embedded Systems and Electronics in general passionate. Love to dig into embedded Linux development on general purpose single board computers; Connect devices to the internet: ESP8266/ESP32, LoRa or SigFox; SDR prototyping with open HW and SW HackRF One board from Great Scott Gadgets, and more.   
