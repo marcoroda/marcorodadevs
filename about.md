@@ -7,7 +7,7 @@ permalink: /about/
 # $ whoami
 
 | -- | --|
-| Marco Roda, maker and DYI electronics enthusiast from Portugal. All sports lover, father of a little girl and currently working as a GNSS engineer. Love space and all about rocket science. | <img src="../assets/avatar.png" alt="Avatar" style="width:150px">|
+| Marco Roda, maker and DIY electronics enthusiast from Portugal. All sports lover, father of a little girl and currently working as a GNSS engineer. Love space and all about rocket science. | <img src="../assets/avatar.png" alt="Avatar" style="width:150px">|
 
 
 # $ uname -a
